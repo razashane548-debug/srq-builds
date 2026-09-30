@@ -49,7 +49,28 @@
 <p>
 <a href="https://reshminabuild.netlify.app/privacy">Read the invite-form privacy notice</a>
 </p>
-<h2>Reshu PDF Reader v0.3.4</h2>
+<h2>Current app: Reshu PDF Reader v0.3.5</h2>
+<p>This summary describes public version 0.3.5. It is based on APK/source checks, not a packet-level network audit.</p>
+<h3>Choices are separate and off by default</h3>
+<p>Push notifications use Firebase Cloud Messaging data-only messages with an in-app inbox. Push is opt-in and OFF by default. Optional app-usage sharing uses Firebase Analytics, is also OFF by default, and is a separate choice from push. Custom usage events carry no book text, but Firebase Analytics is not anonymous. This version does not use Crashlytics.</p>
+<h3>Camera, translation and backups</h3>
+<p>The camera-to-book flow processes OCR on device with Tesseract. Offline translation supports English, Hindi and Urdu, with translation-model downloads only after consent. Punjabi translation is not supported.</p>
+<p>Encrypted backups contain library/bookmark metadata, with a separate recovery key and a weekly option. Original book files are NOT included. Backup exports and cloud folders use your chosen Android file provider. Keep the recovery key separately; without it, an encrypted backup cannot be read.</p>
+<h3>Permissions in v0.3.5</h3>
+<p>The app has no CAMERA permission: capture uses a system or external camera activity, and Reshu receives the chosen photo. It has no broad storage, contacts, location or advertising-ID permission.</p>
+<p>Network, microphone, notification, foreground media/data-processing, wake-lock, boot, vibration, battery-optimization and biometric permissions support related app functions. Firebase push permission is present for opt-in messaging. An SDK-bundled Play install-referrer attribution capability is also present; this does not make the app anonymous or identifier-free. Optional accessibility-service access for volume-key controls remains separately enabled by you.</p>
+<h3>When data can leave the device</h3>
+<ul>
+<li>Online text-to-speech may send reading text to your installed speech provider. This includes automatic mode when it chooses an online voice. Offline voices avoid online TTS processing.</li>
+<li>System voice search can process speech through its provider. The microphone is used for voice notes and system voice search.</li>
+<li>Update checks contact the hosted version file through a GET request; the hosting service receives ordinary network information.</li>
+<li>Model downloads, chosen document/backup providers and Android OS backup can involve network services.</li>
+<li>User-directed sharing sends the files you choose. Reports can include book titles, file references, vocabulary and errors. Review them before sharing.</li>
+<li>If you enable app-usage sharing or push, Firebase services process information for those selected functions. No release-announcement notification was sent for this release.</li>
+</ul>
+<p>Do not assume that “local” features mean no information can ever leave the device. Your consent choices, installed voice provider, backup settings and selected file provider all matter.</p>
+<h2>Historical app summary: Reshu PDF Reader v0.3.4</h2>
+<p>The following section describes the earlier version only. It does not describe 0.3.5.</p>
 <p>This app summary is based on the public APK permissions and source review, not a network-traffic audit. It does not describe unreleased versions.</p>
 <h3>Stored on your device</h3>
 <p>The library, reading position, bookmarks, vocabulary, statistics, settings and voice notes are stored locally. Documents are chosen through Android’s file picker, which can include a cloud provider. OCR processing is local. This version has no account login, advertising SDK, Firebase Analytics, Crashlytics or Firebase push messaging.</p>
