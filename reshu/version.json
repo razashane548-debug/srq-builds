@@ -1,10 +1,12 @@
 {
-  "latestVersionCode": 6,
-  "latestVersionName": "0.3.3",
+  "latestVersionCode": 7,
+  "latestVersionName": "0.3.4",
   "apkUrl": "https://razashane548-debug.github.io/srq-builds/reshu/",
   "features": [
-    "Reader buttons fit narrow screens without mid-word labels.",
-    "Short visible labels retain full TalkBack action descriptions.",
-    "About shows the installed app version."
+    "Reading rewards are back: local coins, levels and diamonds based on PDF speaking time.",
+    "Voice picker and preview are back, with automatic online/offline voice selection.",
+    "First-run microphone permission includes a clear explanation.",
+    "In-app update notices show new features and open the stable download page.",
+    "Android 6 compatibility fixes, with the readable reader-button layout preserved."
   ]
 }
