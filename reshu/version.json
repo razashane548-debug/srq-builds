@@ -1,0 +1,10 @@
+{
+  "latestVersionCode": 6,
+  "latestVersionName": "0.3.3",
+  "apkUrl": "https://razashane548-debug.github.io/srq-builds/reshu/",
+  "features": [
+    "Reader buttons fit narrow screens without mid-word labels.",
+    "Short visible labels retain full TalkBack action descriptions.",
+    "About shows the installed app version."
+  ]
+}
