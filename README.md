@@ -2,18 +2,19 @@
 
 A free, ad-free Android app for reading and listening to documents, designed with TalkBack users in mind.
 
-[Download and installation help](https://srstudio.dpdns.org/apps/reshu/) | [Public v0.3.5 release](https://github.com/razashane548-debug/srq-builds/releases/tag/reshu-v0.3.5)
+[Download and installation help](https://srstudio.dpdns.org/apps/reshu/) | [Public v0.3.13-r8 release](https://github.com/razashane548-debug/srq-builds/releases/tag/reshu-v0.3.13-r8)
 
-[![Latest GitHub pre-release](https://img.shields.io/github/v/release/razashane548-debug/srq-builds?include_prereleases)](https://github.com/razashane548-debug/srq-builds/releases/tag/reshu-v0.3.5)
-[![GitHub release asset downloads](https://img.shields.io/github/downloads/razashane548-debug/srq-builds/total)](https://github.com/razashane548-debug/srq-builds/releases/tag/reshu-v0.3.5)
+[![Latest GitHub pre-release](https://img.shields.io/github/v/release/razashane548-debug/srq-builds?include_prereleases)](https://github.com/razashane548-debug/srq-builds/releases/tag/reshu-v0.3.13-r8)
+[![GitHub release asset downloads](https://img.shields.io/github/downloads/razashane548-debug/srq-builds/total)](https://github.com/razashane548-debug/srq-builds/releases/tag/reshu-v0.3.13-r8)
 
 The download badge counts all release asset downloads, not unique people, installs or active users.
 
 ## Current public release
 
-- Version 0.3.5, version code 8. Public pre-release, not a final release.
+- Version 0.3.13-r8, version code 15. Public pre-release, not a final release.
 - Android 6.0 or later. Direct APK download, not a Google Play listing.
-- File size: 77,076,890 bytes (73.5 MiB).
+- File size: 75,395,258 bytes (71.9 MiB).
+- SHA256: `045d5c889ae30bcb66c1e41875c9fda8b65b838c4cc5db6a9ab082a11cb89ae7`.
 - No ads or in-app purchases in this public version.
 - App text: English, Hindi, Urdu and Indian Punjabi.
 
@@ -31,9 +32,9 @@ OCR, translation and reading order can be wrong. Not every scanned PDF can be re
 
 Keep Google Play Protect on and scan the APK before installing. If it identifies the app as harmful, stop rather than bypassing the warning.
 
-## Real v0.3.5 screenshots
+## Real v0.3.13-r8 screenshots
 
-These are frames from an October 1 recording showing v0.3.5. They show the interface, not proof that every feature or device has been tested.
+These are frames from an October 1 recording showing v0.3.13-r8. They show the interface, not proof that every feature or device has been tested.
 
 <img src="https://srstudio.dpdns.org/images/reshu-v035-reading-actions.webp" width="320" alt="Reshu reading actions with TalkBack focus on Skip by.">
 
