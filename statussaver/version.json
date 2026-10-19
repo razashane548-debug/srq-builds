@@ -1,0 +1,12 @@
+{
+  "latestVersionCode": 3,
+  "latestVersionName": "0.2.0",
+  "apkUrl": "https://razashane548-debug.github.io/srq-builds/statussaver/",
+  "features": [
+    "Save WhatsApp status photos and videos you choose to your gallery.",
+    "TalkBack-first design: plain lists and labelled buttons, no ad grids.",
+    "Fully offline: no internet permission, nothing leaves your phone.",
+    "Folder access through Android's own picker, granted once by you.",
+    "Free and ad-free."
+  ]
+}
