@@ -51,8 +51,31 @@
 <p>
 <a href="https://reshminabuild.netlify.app/privacy">Read the invite-form privacy notice</a>
 </p>
-<h2>Current app: Reshu PDF Reader v0.3.5</h2>
-<p>This summary describes public version 0.3.5. It is based on APK/source checks, not a packet-level network audit.</p>
+<h2>Current app: Reshu PDF Reader v0.3.16</h2>
+<p>This summary describes version 0.3.16. It is based on APK/source checks, not a packet-level network audit. If you run an older public version, see the historical summaries below.</p>
+<h3>The plain version</h3>
+<p><strong>Nothing you read or write leaves your phone.</strong> Your books, reading position, bookmarks, notes, vocabulary, voice notes and settings are stored on your device. With default settings the app makes only one kind of network contact on its own: a small update check. Pronunciation data is bundled inside the app, and translation-model downloads happen only when you ask for them. Everything else that uses the network is a separate choice you make, and each one is OFF by default.</p>
+<h3>What stays on your device</h3>
+<p>Books you open are read in place through Android's file picker. OCR for scanned pages runs on your device (Tesseract). Translation between English, Hindi and Urdu runs on your device once its model is downloaded. Pronunciation reports and feedback drafts stay on the phone unless you choose to share them. Encrypted backups contain library and bookmark metadata, never the book files, and go only to the location you choose; without your recovery key nobody can read an encrypted backup.</p>
+<h3>The one automatic contact: update check</h3>
+<p>The app checks a small version file on this website to see whether an update exists. The hosting service (GitHub) receives ordinary network information, like any website visit. No book text, title or reading activity is included. If you choose to update, the APK downloads from GitHub.</p>
+<h3>Choices you can turn on - each OFF by default</h3>
+<ul>
+<li><strong>Premium online voice.</strong> If you pick the premium voice, the text currently being read is sent to Microsoft's speech service to create the audio. Offline voices never send reading text anywhere.</li>
+<li><strong>Translation-model downloads.</strong> When you first use a translation language, its model downloads from Google (ML Kit). After that, translation runs on device.</li>
+<li><strong>Push notifications.</strong> Opt-in, OFF by default. Uses Firebase Cloud Messaging data-only messages with an in-app inbox.</li>
+<li><strong>App-usage sharing.</strong> Opt-in, OFF by default, and a separate choice from push. Uses Firebase Analytics; events carry no book text, but it is not anonymous.</li>
+<li><strong>Crash reports.</strong> Opt-in, OFF by default. Uses Firebase Crashlytics and sends technical crash details, not book content.</li>
+<li><strong>Sharing.</strong> Exporting, sharing or sending a report sends the files you choose through the app you choose. Reports can include book titles and errors; review them before sharing.</li>
+<li><strong>System voice search.</strong> If you use it, speech is processed by your installed speech provider.</li>
+</ul>
+<h3>Permissions in v0.3.16</h3>
+<p>The app has no CAMERA permission: capture uses a system or external camera activity, and Reshu receives the chosen photo. It has no contacts, location, advertising-ID or broad storage permission.</p>
+<p>Network, microphone, notification, foreground media/data-sync, wake-lock, boot, vibration, battery-optimization and exact-alarm permissions support related app functions (voice notes, reminders, reading aloud). Optional accessibility-service access for volume-key controls remains separately enabled by you. An SDK-bundled ads-attribution capability is present in the manifest; the app shows no ads and does not use it for advertising.</p>
+<h3>Your data and deletion</h3>
+<p>Because your reading data lives on your phone, you hold it: clearing the app's storage or uninstalling removes it. Optional items you turned on can be turned off individually in Settings; turning off push stops push messages, and turning off usage sharing or crash reports stops new data being sent. Encrypted backups can be deleted wherever you chose to store them. Questions or deletion requests: contact SR Studio below.</p>
+<h2>Historical app summary: Reshu PDF Reader v0.3.5</h2>
+<p>The following section describes the earlier version only. It does not describe 0.3.16.</p>
 <h3>Choices are separate and off by default</h3>
 <p>Push notifications use Firebase Cloud Messaging data-only messages with an in-app inbox. Push is opt-in and OFF by default. Optional app-usage sharing uses Firebase Analytics, is also OFF by default, and is a separate choice from push. Custom usage events carry no book text, but Firebase Analytics is not anonymous. This version does not use Crashlytics.</p>
 <h3>Camera, translation and backups</h3>
@@ -70,23 +93,23 @@
 <li>User-directed sharing sends the files you choose. Reports can include book titles, file references, vocabulary and errors. Review them before sharing.</li>
 <li>If you enable app-usage sharing or push, Firebase services process information for those selected functions. No release-announcement notification was sent for this release.</li>
 </ul>
-<p>Do not assume that “local” features mean no information can ever leave the device. Your consent choices, installed voice provider, backup settings and selected file provider all matter.</p>
+<p>Do not assume that "local" features mean no information can ever leave the device. Your consent choices, installed voice provider, backup settings and selected file provider all matter.</p>
 <h2>Historical app summary: Reshu PDF Reader v0.3.4</h2>
-<p>The following section describes the earlier version only. It does not describe 0.3.5.</p>
+<p>The following section describes the earlier version only. It does not describe 0.3.5 or later.</p>
 <p>This app summary is based on the public APK permissions and source review, not a network-traffic audit. It does not describe unreleased versions.</p>
 <h3>Stored on your device</h3>
-<p>The library, reading position, bookmarks, vocabulary, statistics, settings and voice notes are stored locally. Documents are chosen through Android’s file picker, which can include a cloud provider. OCR processing is local. This version has no account login, advertising SDK, Firebase Analytics, Crashlytics or Firebase push messaging.</p>
+<p>The library, reading position, bookmarks, vocabulary, statistics, settings and voice notes are stored locally. Documents are chosen through Android's file picker, which can include a cloud provider. OCR processing is local. This version has no account login, advertising SDK, Firebase Analytics, Crashlytics or Firebase push messaging.</p>
 <h3>When information can leave your device</h3>
 <ul>
 <li>The update check contacts this site at most once a day. Hosting receives ordinary network information, but no book text is included in that check.</li>
 <li>Online text-to-speech, including automatic voice selection when an online voice is used, may send text to your installed speech provider. Choose an offline voice to avoid online TTS processing.</li>
 <li>System voice search may process speech through its provider.</li>
 <li>Sharing or sending a report sends files you choose. Reports can contain book titles, file references, vocabulary and errors. Review them before sharing.</li>
-<li>Backup exports go to the location or provider you choose. Android’s own cloud backup can also apply; app-lock preferences are excluded.</li>
+<li>Backup exports go to the location or provider you choose. Android's own cloud backup can also apply; app-lock preferences are excluded.</li>
 </ul>
 <h3>Permissions</h3>
 <p>The microphone is used for voice-note recording and system voice search. Optional accessibility-service access is enabled by you for volume-key reading controls. Notification, foreground media-playback, biometric and battery-optimization permissions support their related app functions. The public v0.3.4 manifest has no camera, contacts, location or broad storage permission.</p>
-<p>“Stored locally” does not mean no information ever leaves the device. Your installed speech provider, Android backup settings and files you choose to share matter.</p>
+<p>"Stored locally" does not mean no information ever leaves the device. Your installed speech provider, Android backup settings and files you choose to share matter.</p>
 <h2>Permissions inside an app</h2>
 <p>Review the app’s permission explanations and Android’s permission controls. Do not assume this website notice covers an app’s voice services or other data handling.</p>
 <h2>Questions</h2>
